@@ -43,7 +43,7 @@ class AppFixtures extends Fixture
       }
 
       // BOUCLE DES FACTURES
-      for ($i = 0; $i < mt_rand(2, 5); $i++) {
+      for ($i = 1; $i < mt_rand(2, 5); $i++) {
         $invoice = new Invoice;
         $invoice->setAmount($faker->randomFloat(2, 250, 2500))
           ->setSentAt($faker->dateTimeBetween("-6 months"))
