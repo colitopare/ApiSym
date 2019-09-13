@@ -35,4 +35,6 @@ security:
     - { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY }
     # pour pouvoir s'inscrire
     - { path: ^/users$, roles: IS_AUTHENTICATED_ANONYMOUSLY, methods: [POST] }
+    # Si on n'utilise pas postman
+    # - { path: ^/$, roles: IS_AUTHENTICATED_ANONYMOUSLY }
     - { path: ^/, roles: IS_AUTHENTICATED_FULLY }
